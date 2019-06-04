@@ -1,0 +1,55 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<taglib version="2.0" xmlns="http://java.sun.com/xml/ns/j2ee"
+	xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance"
+	xsi:schemaLocation="http://java.sun.com/xml/ns/j2ee web-jsptaglibrary_2_0.xsd">
+
+	<tlib-version>1.0</tlib-version>
+	<jsp-version>2.0</jsp-version>
+	<short-name>ls</short-name>
+	<uri>http://www.leesoft.cn/ls</uri>
+	<display-name>"自定义标签"</display-name>
+
+	<tag>
+		<name>path</name>
+		<tag-class>com.leeframework.core.tag.simple.ContextPathTag</tag-class>
+		<body-content>empty</body-content>
+		<description>上下文路径</description>
+	</tag>
+	<tag>
+		<name>locale</name>
+		<tag-class>com.leeframework.core.tag.simple.LocalTag</tag-class>
+		<body-content>empty</body-content>
+		<description>国际化语言</description>
+	</tag>
+	
+	<tag>
+		<name>layoutContainer</name>
+		<tag-class>com.leeframework.core.tag.ui.LayoutContainerTag</tag-class>
+		<body-content>JSP</body-content>
+		<description>布局容器</description>
+	</tag>
+	<tag>
+		<name>layoutLeft</name>
+		<tag-class>com.leeframework.core.tag.ui.LayoutLeftTag</tag-class>
+		<body-content>JSP</body-content>
+		<description>页面布局左侧区域</description>
+		<attribute>  
+	        <name>title</name>  
+	        <required>false</required>  
+	        <rtexprvalue>true</rtexprvalue>  
+	    </attribute> 
+	</tag>
+	<tag>
+		<name>layoutTop</name>
+		<tag-class>com.leeframework.core.tag.ui.LayoutTopTag</tag-class>
+		<body-content>JSP</body-content>
+		<description>页面布局顶部区域</description>
+	</tag>
+	<tag>
+		<name>layoutCenter</name>
+		<tag-class>com.leeframework.core.tag.ui.LayoutCenterTag</tag-class>
+		<body-content>JSP</body-content>
+		<description>页面布局中心区域</description>
+	</tag>
+
+</taglib>

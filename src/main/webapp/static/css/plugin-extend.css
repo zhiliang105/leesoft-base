@@ -1,0 +1,30 @@
+/**
+ * 插件样式扩展
+ */
+ 
+/* 解决bootstrap与layui的冲突 */
+legend {width: auto; border-bottom: 0;}
+
+/* bootstrap */
+.breadcrumb { margin-bottom: 0; border-radius: 0px;}
+.breadcrumb > li + li:before {content: "> ";}
+.dropdown-menu > li > a {padding: 8px 20px;}
+
+/* bootstrap-table */
+.table td, .table th{vertical-align: middle !important;}
+.fixed-table-toolbar .search {margin-left: 15px;}
+.fixed-table-container thead th{background: #f2f2f2;}
+.fixed-table-container .no-records-found {font-size: 16px; }
+.fixed-table-container .no-records-found i{font-size: 17px; margin-right: 6px; }
+.bootstrap-table .table > .fixed-table-body > thead > tr > th { border-bottom: 0 !important; }
+.fixed-table-pagination div.pagination, .fixed-table-pagination .pagination-detail { margin-top: 3px; margin-bottom: 2px; }
+.fixed-table-toolbar .bs-bars, .fixed-table-toolbar .search, .fixed-table-toolbar .columns{margin-top: 10px; margin-bottom: 5px; }
+
+/* layui & layer */
+body .custom-class .layui-layer-btn{border-top:1px solid #E9E7E7; background: #F8F8F8; padding-top: 8px;}
+.layui-fluid{padding: 0 18px;}
+.layui-form{margin-top: 10px;}
+.layui-form-item{margin-bottom: 6px;}
+.layui-form-item .layui-inline{margin-bottom: 4px;}
+.layui-form-label{width: 110px;margin-bottom: 0;}
+.layui-form-item .layui-input-inline{width: 210px;}

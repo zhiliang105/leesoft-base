@@ -1,0 +1,36 @@
+<?xml version="1.1" encoding="UTF-8"?>
+<configuration>
+
+	<!-- 控制台输出 -->
+	<appender name="console" class="ch.qos.logback.core.ConsoleAppender">
+		<encoder>
+			<pattern>[LS] %d{yyyy-MM-dd HH:mm:ss.SSS} %-5level [%C.%M] - %msg%n</pattern>
+		</encoder>
+	</appender>
+
+	<appender name="file-error" class="ch.qos.logback.core.rolling.RollingFileAppender">
+		<filter class="ch.qos.logback.classic.filter.LevelFilter">  
+	        <level>ERROR</level>  
+	        <onMatch>ACCEPT</onMatch>  
+	        <onMismatch>DENY</onMismatch>  
+	    </filter>
+		<rollingPolicy class="ch.qos.logback.core.rolling.TimeBasedRollingPolicy">
+			<fileNamePattern>logs/lsoft_system.%d{yyyy-MM-dd}.log</fileNamePattern>
+			<MaxHistory>30</MaxHistory>
+		</rollingPolicy>
+		<encoder>
+			<pattern>[LS] %d{yyyy-MM-dd HH:mm:ss.SSS} %-5level [%C.%M] - %msg%n</pattern>
+		</encoder>
+	</appender>
+	
+	<root level="WARN">
+		<appender-ref ref="console"/>
+		<appender-ref ref="file-error" />
+	</root>
+
+	<logger name="com.leeframework" level="DEBUG" />
+	<logger name="org.hibernate" level="WARN" />
+	<logger name="org.springframework" level="WARN" />
+	<logger name="org.apache.shiro" level="WARN" /> 
+	
+</configuration>
