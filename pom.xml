@@ -7,7 +7,7 @@
 	<version>1.0.0</version>
 
 	<name>leesoft-base Maven Webapp</name>
-	<url>http://maven.apache.org</url>
+	<url>http://www.leesoft.cn</url>
 
 	<properties>
 		<junit.version>4.12</junit.version>
