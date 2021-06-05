@@ -15,7 +15,7 @@
 		<hibernate.version>4.3.11.Final</hibernate.version>
 		<hibernate-validator.version>5.3.5.Final</hibernate-validator.version>
 		<hibernate-search.version>4.2.0.Final</hibernate-search.version>
-		<shiro.version>1.6.0</shiro.version>
+		<shiro.version>1.7.0</shiro.version>
 		<quartz.version>2.3.2</quartz.version>
 		<jackson.version>2.10.1</jackson.version>
 		<annotation-version>1.2</annotation-version>
