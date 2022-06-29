@@ -21,7 +21,7 @@
 		<annotation-version>1.2</annotation-version>
 		<slf4j.version>1.7.13</slf4j.version>
 		<logback.version>1.1.2</logback.version>
-		<poi.version>3.9</poi.version>
+		<poi.version>4.1.1</poi.version>
 
 		<jdbc.driver.groupId>mysql</jdbc.driver.groupId>
 		<jdbc.driver.artifactId>mysql-connector-java</jdbc.driver.artifactId>
